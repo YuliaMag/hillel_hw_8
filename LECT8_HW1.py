@@ -18,12 +18,12 @@ def test_one():
 
 
 test_one()
-
+print("\n")
 
 @skip_if(False, "Some reason...")
 def test_two():
-    assert 2 - 2 == 0
-    print("Test two.")
+    assert 2 - 2 == 5
+    # print("Test two.")
 
 
 test_two()
