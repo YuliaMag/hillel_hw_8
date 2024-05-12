@@ -1,4 +1,3 @@
 Function 'add' was called 1 times.
 Function 'subtr' was called 1 times.
 Function 'subtr' was called 2 times.
-Function 'subtr' was called 3 times.
