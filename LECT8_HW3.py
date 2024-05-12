@@ -6,11 +6,9 @@ def lst_gen(list_, iter_num=None):
                 yield x
             n += 1
     else:
-        n = 0
         while True:
             for x in list_:
                 yield x
-            n += 1
 
 
 list_ = ["a", "b"]
