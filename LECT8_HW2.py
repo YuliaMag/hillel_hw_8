@@ -1,8 +1,9 @@
-from pathlib import Path
+import os
 
 
 def call_counter(path):
-    path = Path("data.txt")
+    # path = Path("data.txt")
+    path = os.path.join(path)
 
     def wrapper(func):
         def counter(*args, **kwargs):
@@ -10,6 +11,7 @@ def call_counter(path):
             with open(path, "a") as f:
                 f.write(f"Function '{func.__name__}' was called {counter.calls} times.\n")
             return func(*args, **kwargs)
+
         counter.calls = 0
         return counter
 
@@ -24,7 +26,7 @@ def add(a, b):
 print(add(128, 10))
 
 
-@call_counter("data.txt")
+@call_counter("test.txt")
 def subtr(a, b):
     return a - b
 

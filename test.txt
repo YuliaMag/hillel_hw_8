@@ -1,0 +1,2 @@
+Function 'subtr' was called 1 times.
+Function 'subtr' was called 2 times.
