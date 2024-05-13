@@ -1,9 +1,9 @@
-import os
+# import os
 
 
 def call_counter(path):
     # path = Path("data.txt")
-    path = os.path.join(path)
+    # path = os.path.join(path)
 
     def wrapper(func):
         def counter(*args, **kwargs):
